@@ -13,6 +13,7 @@
         <Label Text="Belajar Xamarin for IOS" FontSize="Small" TextColor="Navy" />
         <Label Text="Belajar Xamarin Forms" FontSize="Default" TextColor="Orange" />
         <Label Text="Belajar XAML Layout" FontSize="Medium" TextColor="Green" />
+        <Entry x:Name="entryNama" Placeholder="masukan nama" />
         <StackLayout Orientation="Horizontal">
             <Button x:Name="btnAdd" Text="Add" WidthRequest="50" FontSize="Micro" />
             <Button x:Name="btnEdit" Text="Edit" WidthRequest="50" FontSize="Micro" />

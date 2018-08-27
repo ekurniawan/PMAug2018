@@ -13,7 +13,20 @@ namespace SampleMobileApp
 		{
 			InitializeComponent();
             btnAdd.Clicked += BtnAdd_Clicked;
+            btnEdit.Clicked += BtnEdit_Clicked;
+            btnSave.Clicked += BtnSave_Clicked;
 		}
+
+        private void BtnSave_Clicked(object sender, EventArgs e)
+        {
+            string nama = entryNama.Text;
+            DisplayAlert("Keterangan", $"Nama anda {nama}", "OK");
+        }
+
+        private void BtnEdit_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Keterangan", "Anda memilih tombol Edit", "OK");
+        }
 
         private void BtnAdd_Clicked(object sender, EventArgs e)
         {
