@@ -16,7 +16,7 @@
         <StackLayout Orientation="Horizontal">
             <Button x:Name="btnAdd" Text="Add" WidthRequest="50" FontSize="Micro" />
             <Button x:Name="btnEdit" Text="Edit" WidthRequest="50" FontSize="Micro" />
-            <Button Text="Save" WidthRequest="50" FontSize="Micro" />
+            <Button x:Name="btnSave" Text="Save" WidthRequest="50" FontSize="Micro" />
         </StackLayout>
     </StackLayout>
 
