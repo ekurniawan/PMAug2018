@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SampleMobileApp"
+             x:Class="SampleMobileApp.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+    	<Label Text="Hello Xamarin Forms !!" 
+           HorizontalOptions="Start"
+           VerticalOptions="Start" />
+        <Label Text="Belajar Xamarin for Android" TextColor="Red" FontSize="Micro" />
+        <Label Text="Belajar Xamarin for IOS" FontSize="Small" TextColor="Navy" />
+        <Label Text="Belajar Xamarin Forms" FontSize="Default" TextColor="Orange" />
+        <Label Text="Belajar XAML Layout" FontSize="Medium" TextColor="Green" />
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnAdd" Text="Add" WidthRequest="50" FontSize="Micro" />
+            <Button x:Name="btnEdit" Text="Edit" WidthRequest="50" FontSize="Micro" />
+            <Button Text="Save" WidthRequest="50" FontSize="Micro" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
