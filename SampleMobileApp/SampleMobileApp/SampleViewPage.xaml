@@ -5,6 +5,13 @@
     <ContentPage.Content>
         <StackLayout>
             <Image Source="xamarinmonkey.png" WidthRequest="120" />
+            <Slider x:Name="sliderSample" Minimum="0" Maximum="100" />
+            <Label Text="Usia :" />
+            <Entry x:Name="entryUsia" />
+            <Stepper x:Name="stepperUsia" Minimum="0" Maximum="100" Increment="1" />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnGet" Text="Get Value" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
