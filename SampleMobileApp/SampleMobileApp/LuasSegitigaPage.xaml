@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMobileApp.LuasSegitigaPage" Title="Hitung Luas Segitiga">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Masukan Alas :" />
+            <Entry x:Name="entryAlas" Placeholder="masukan alas (number)" Keyboard="Numeric" />
+            <Label Text="Masukan Tinggi :" />
+            <Entry x:Name="entryTinggi" Placeholder="masukan tinggi (number)" Keyboard="Numeric" />
+            <Label Text="Hasil :"/>
+            <Entry x:Name="entryHasil" IsEnabled="False" />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnHitung" Text="Hitung" FontSize="Small" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

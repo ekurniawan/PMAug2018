@@ -11,7 +11,8 @@ namespace SampleMobileApp
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+            //halaman pertama kali dijalankan
+			MainPage = new SampleViewPage();
 		}
 
 		protected override void OnStart ()
