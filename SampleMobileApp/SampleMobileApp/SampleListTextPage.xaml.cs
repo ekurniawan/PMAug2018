@@ -1,4 +1,5 @@
-﻿using SampleMobileApp.ViewModel;
+﻿using SampleMobileApp.Models;
+using SampleMobileApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,14 @@ namespace SampleMobileApp
         {
             InitializeComponent();
             this.BindingContext = new ViewModelBerita();
+
+        }
+
+        private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var data = (Berita)e.Item;
+            DisplayAlert("Keterangan", 
+                $"Judul: {data.Judul} dan Deskripsi: {data.Deskripsi}", "OK");
         }
     }
 }

@@ -16,7 +16,7 @@
                 VerticalOptions="CenterAndExpand" />
             <Label BindingContext="{x:Reference Name=entryNama}" Text="{Binding Text}" />
             <Entry x:Name="entryNama" />-->
-            <ListView ItemsSource="{Binding ListBerita}">
+            <ListView ItemsSource="{Binding ListBerita}" ItemTapped="ListView_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Judul}" Detail="{Binding Deskripsi}" 
