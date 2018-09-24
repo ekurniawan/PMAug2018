@@ -14,7 +14,7 @@ namespace SampleMobileApp.ViewModel
             {
                 new Berita{Judul="Belajar Xamarin Forms",Deskripsi="Belajar Data Binding dan ListView"},
                 new Berita{Judul="Belajar CSharp",Deskripsi="Belajar konsep OOP dan Design Patern"},
-                new Berita{Judul=""}
+                new Berita{Judul="Belajar Xamarin Android",Deskripsi="Membuat Android Apps"}
             };
         }
 
