@@ -12,7 +12,7 @@ namespace SampleMobileApp
 			InitializeComponent();
 
             //halaman pertama kali dijalankan
-			MainPage = new GridLayoutPage();
+			MainPage = new SampleListTextPage();
 		}
 
 		protected override void OnStart ()
