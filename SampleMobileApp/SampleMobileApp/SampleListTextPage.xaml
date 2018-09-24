@@ -4,7 +4,7 @@
              x:Class="SampleMobileApp.SampleListTextPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="{Binding Value,StringFormat='Rotasi {0}'}"
+            <!--<Label Text="{Binding Value,StringFormat='Rotasi {0}'}"
                BindingContext="{x:Reference Name=slider}"
                Rotation="{Binding Value}"
                FontAttributes="Bold"
@@ -15,7 +15,15 @@
                 Maximum="360"
                 VerticalOptions="CenterAndExpand" />
             <Label BindingContext="{x:Reference Name=entryNama}" Text="{Binding Text}" />
-            <Entry x:Name="entryNama" />
+            <Entry x:Name="entryNama" />-->
+            <ListView ItemsSource="{Binding ListBerita}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Judul}" Detail="{Binding Deskripsi}" 
+                                  TextColor="Red" DetailColor="Blue" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
