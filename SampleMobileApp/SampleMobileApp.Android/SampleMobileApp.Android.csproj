@@ -102,19 +102,13 @@
     <AndroidResource Include="Resources\drawable\myicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\buah-buahan.jpg" />
+    <AndroidResource Include="Resources\drawable\gambar1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\makanan-olahan-ayam.jpg" />
+    <AndroidResource Include="Resources\drawable\gambar2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\makanan-olahan-ikan.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\makanan-olahan-sapi.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\makanan-ringan.jpg" />
+    <AndroidResource Include="Resources\drawable\gambar3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

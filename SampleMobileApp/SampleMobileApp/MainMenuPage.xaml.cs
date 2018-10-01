@@ -20,6 +20,7 @@ namespace SampleMobileApp
             menuGrid.Clicked += MenuNavigation_Clicked;
             menuView.Clicked += MenuNavigation_Clicked;
             menuLuas.Clicked += MenuNavigation_Clicked;
+            btnListProduct.Clicked += BtnNavigasi_Clicked;
         }
 
         private void MenuNavigation_Clicked(object sender, EventArgs e)
@@ -46,9 +47,13 @@ namespace SampleMobileApp
             {
                 Navigation.PushAsync(new SampleListPage());
             }
-            else
+            else if(myButton.Text == "Text List Page")
             {
                 Navigation.PushAsync(new SampleListTextPage());
+            }
+            else
+            {
+                Navigation.PushAsync(new ProductListPage());
             }
         }
     }

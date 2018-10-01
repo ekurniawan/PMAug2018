@@ -11,6 +11,7 @@
         <StackLayout>
             <Button x:Name="btnSimpleList" Text="Simple List Page" />
             <Button x:Name="btnTextList" Text="Text List Page" />
+            <Button x:Name="btnListProduct" Text="List Product" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

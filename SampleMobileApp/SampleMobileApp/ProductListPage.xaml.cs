@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SampleMobileApp.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,13 @@ using Xamarin.Forms.Xaml;
 
 namespace SampleMobileApp
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ProductListPage : ContentPage
-	{
-		public ProductListPage ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ProductListPage : ContentPage
+    {
+        public ProductListPage()
+        {
+            InitializeComponent();
+            this.BindingContext = new ProductViewModel();
+        }
+    }
 }
