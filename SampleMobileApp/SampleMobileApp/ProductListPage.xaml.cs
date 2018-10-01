@@ -1,4 +1,5 @@
-﻿using SampleMobileApp.ViewModel;
+﻿using SampleMobileApp.Models;
+using SampleMobileApp.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,16 @@ namespace SampleMobileApp
         {
             InitializeComponent();
             this.BindingContext = new ProductViewModel();
+            lstProduct.ItemTapped += LstProduct_ItemTapped;
+        }
+
+        private void LstProduct_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var detailPage = new ProductDetailPage();
+            var data = (Product)e.Item;
+            detailPage.BindingContext = data;
+            Navigation.PushAsync(detailPage);
+            //DisplayAlert("Keterangan", $"Anda memilih produk {data.NamaProduct}", "OK");
         }
     }
 }

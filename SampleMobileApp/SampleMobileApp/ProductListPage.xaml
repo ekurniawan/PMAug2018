@@ -4,7 +4,7 @@
              x:Class="SampleMobileApp.ProductListPage" Title="Product List">
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding ListProduct}">
+            <ListView x:Name="lstProduct" ItemsSource="{Binding ListProduct}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ImageCell ImageSource="{Binding Gambar}" Text="{Binding NamaProduct}" 
