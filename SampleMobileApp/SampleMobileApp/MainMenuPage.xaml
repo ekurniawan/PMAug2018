@@ -2,6 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SampleMobileApp.MainMenuPage" Title="Main Menu">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="menuGrid" Text="Grid Layout" Order="Secondary" />
+        <ToolbarItem x:Name="menuView" Text="Sample View" Order="Secondary" />
+        <ToolbarItem x:Name="menuLuas" Text="Hitung Luas" Order="Primary" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <Button x:Name="btnSimpleList" Text="Simple List Page" />
