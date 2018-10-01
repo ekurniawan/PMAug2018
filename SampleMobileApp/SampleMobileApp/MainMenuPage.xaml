@@ -5,7 +5,7 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="menuGrid" Text="Grid Layout" Order="Secondary" />
         <ToolbarItem x:Name="menuView" Text="Sample View" Order="Secondary" />
-        <ToolbarItem x:Name="menuLuas" Text="Hitung Luas" Order="Primary" />
+        <ToolbarItem x:Name="menuLuas" Icon="myicon.png" Order="Primary" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
