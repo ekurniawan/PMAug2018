@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMobileApp.HitungNilaiPage" Title="Hitung Nilai">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Masukan Angka :" />
+            <Entry Text="87" />
+            <Label Text="Hasil dalam huruf :" />
+            <Entry IsEnabled="False" Text="A" />
+            <Button Text="Hitung" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

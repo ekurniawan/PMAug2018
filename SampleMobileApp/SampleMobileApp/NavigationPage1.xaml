@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMobileApp.NavigationPage1" Title="Halaman Navigasi 1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="entryNama" Placeholder="masukan nama" />
+            <Entry x:Name="entryEmail" Placeholder="masukan alamat email" />
+            <Button x:Name="btnKirim" Text="Kirim Ke Navigasi 2" />
+            <Button x:Name="btnSimpan" Text="Simpan Global Variabel" />
+            <Button x:Name="btnPage2" Text="Ke Navigasi 2" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMobileApp.NavigationPage2" Title="Halaman Navigasi 2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblKeterangan" FontSize="Large" />
+            <Button x:Name="btnGetGlobal" Text="Ambil Global Variable" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -12,7 +12,7 @@ namespace SampleMobileApp
 			InitializeComponent();
 
             //halaman pertama kali dijalankan
-			MainPage = new NavigationPage(new MainMenuPage());
+			MainPage = new NavigationPage(new NavigationPage1());
 		}
 
 		protected override void OnStart ()

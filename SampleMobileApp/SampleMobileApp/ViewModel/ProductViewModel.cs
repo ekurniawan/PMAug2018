@@ -12,9 +12,9 @@ namespace SampleMobileApp.ViewModel
         {
             listProduct = new List<Product>
             {
-                new Product {NamaProduct="Buah buahan",Deskripsi="Buah buahan segar",Gambar="gambar1.jpg",Harga=200000},
-                new Product {NamaProduct="Makanan Olahan Ayam",Deskripsi="Makanan olahan dengan bahan daging ayam",Gambar="gambar2.jpg",Harga=300000},
-                new Product {NamaProduct="Makanan Olahan Ikan",Deskripsi="Makanan olahan dengan bahan dasar ikan",Gambar="gambar3.jpg",Harga=150000}
+                new Product {NamaProduct="Apotik K24",Deskripsi="Apotik K24",Gambar="k24.jpg",Harga=200000},
+                new Product {NamaProduct="Laboratorium Pramita",Deskripsi="Laboratorium Pramita",Gambar="pramita.jpg",Harga=300000},
+                new Product {NamaProduct="Laboratorium Prodia",Deskripsi="Laboratorium Prodia",Gambar="prodia.jpg",Harga=150000}
             };
         }
 
