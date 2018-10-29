@@ -12,7 +12,7 @@ namespace SampleMobileApp
 			InitializeComponent();
 
             //halaman pertama kali dijalankan
-            MainPage = new ContohTabbedPage2();
+            MainPage = new MyMasterDetailPage();
 		}
 
 		protected override void OnStart ()
