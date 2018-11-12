@@ -35,7 +35,7 @@
                 <ListView.Footer>
                     <DataTemplate>
                         <StackLayout Orientation="Horizontal" Padding="5,5,5,5">
-                            <Button Text="Add New Employee" />
+                            <Button Text="Add New Employee" Clicked="onAdd_Clicked" />
                         </StackLayout>
                     </DataTemplate>
                 </ListView.Footer>
