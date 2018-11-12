@@ -56,6 +56,18 @@ namespace SampleMobileApp.DAL
             }
         }
 
+        public int EditEmployee(Employee employee)
+        {
+            try
+            {
+                return database.Update(employee);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
 
     }
 }

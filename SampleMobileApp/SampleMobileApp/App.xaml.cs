@@ -1,3 +1,4 @@
+using SampleMobileApp.DAL;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -7,10 +8,21 @@ namespace SampleMobileApp
 {
 	public partial class App : Application
 	{
-		public App ()
+        private static DataAccess dbUtils;
+        public static DataAccess DBUtils
+        {
+            get {
+                if (dbUtils == null)
+                {
+                    dbUtils = new DataAccess();
+                }
+                return dbUtils;
+            }
+        }
+
+        public App ()
 		{
 			InitializeComponent();
-
             //halaman pertama kali dijalankan
             MainPage = new MyMasterDetailPage();
 		}
