@@ -36,7 +36,7 @@ namespace SampleMobileApp
 
         private async void onAdd_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync();
+            await Navigation.PushAsync(new AddEmployee());
         }
     }
 }

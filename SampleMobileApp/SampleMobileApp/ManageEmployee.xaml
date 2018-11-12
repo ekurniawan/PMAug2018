@@ -4,7 +4,7 @@
              x:Class="SampleMobileApp.ManageEmployee" Title="Manage Employee">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="lstEmployee" HasUnevenRows="False">
+            <ListView x:Name="lstEmployee" HasUnevenRows="False" Header="Header Value" Footer="Footer Value">
                 <ListView.HeaderTemplate>
                     <DataTemplate>
                         <StackLayout Orientation="Horizontal" BackgroundColor="Blue"
@@ -32,13 +32,13 @@
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-                <ListView.Footer>
+                <ListView.FooterTemplate>
                     <DataTemplate>
                         <StackLayout Orientation="Horizontal" Padding="5,5,5,5">
                             <Button Text="Add New Employee" Clicked="onAdd_Clicked" />
                         </StackLayout>
                     </DataTemplate>
-                </ListView.Footer>
+                </ListView.FooterTemplate>
             </ListView>
         </StackLayout>
     </ContentPage.Content>

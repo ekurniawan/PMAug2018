@@ -26,8 +26,8 @@ namespace SampleMobileApp.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::SampleMobileApp.Droid.Resource.String.ApplicationName;
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::SampleMobileApp.Droid.Resource.String.Hello;
+			global::Plugin.NetStandardStorage.Resource.String.ApplicationName = global::SampleMobileApp.Droid.Resource.String.ApplicationName;
+			global::Plugin.NetStandardStorage.Resource.String.Hello = global::SampleMobileApp.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::SampleMobileApp.Droid.Resource.Attribute.actionBarSize;
 		}
 		

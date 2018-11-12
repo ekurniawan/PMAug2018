@@ -24,7 +24,7 @@ namespace SampleMobileApp
 		{
 			InitializeComponent();
             //halaman pertama kali dijalankan
-            MainPage = new MyMasterDetailPage();
+            MainPage = new NavigationPage(new ManageEmployee());
 		}
 
 		protected override void OnStart ()

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SampleMobileApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,18 @@ namespace SampleMobileApp
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void OnSaveClicked(object sender, EventArgs e)
+        {
+            var newEmployee = new Employee
+            {
+                EmpName = txtEmpName.Text,
+                Department = txtDepartment.Text,
+                Designation = txtDesign.Text,
+                Qualification=txtQualification.Text
+            };
+            App.DBUtils.InsertEmployee(newEmployee);
+            await Navigation.PopAsync();
+        }
+    }
 }
