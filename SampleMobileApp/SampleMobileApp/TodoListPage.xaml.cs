@@ -28,7 +28,7 @@ namespace SampleMobileApp
 
         private void menuAdd_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new TodoItemPage());
         }
     }
 }

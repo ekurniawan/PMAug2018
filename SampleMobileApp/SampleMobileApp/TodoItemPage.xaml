@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMobileApp.TodoItemPage" Title="Insert Todo List">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Label Text="Name" />
+            <Entry x:Name="nameEntry" Placeholder="insert task name" />
+            <Label Text="Notes" />
+            <Entry x:Name="notesEntry" Placeholder="insert notes" />
+            <Label Text="Done" />
+            <Switch x:Name="doneSwitch" />
+            <Button x:Name="btnSave" Text="Save" Clicked="btnSave_Clicked" />
+            <Button x:Name="btnCancel" Text="Cancel" Clicked="btnCancel_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
