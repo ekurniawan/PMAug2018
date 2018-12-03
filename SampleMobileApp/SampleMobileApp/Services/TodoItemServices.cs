@@ -36,5 +36,22 @@ namespace SampleMobileApp.Services
             }
             return Items;
         }
+
+        public async Task Insert(TodoItem item)
+        {
+            var uri = new Uri(Helpers.RestUrl);
+            try
+            {
+                var jsonData = JsonConvert.SerializeObject(item);
+                var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+                var response = await _client.PostAsync(uri, content);
+                if (!response.IsSuccessStatusCode)
+                    throw new Exception($"Gagal menambahkan data...");
+            }
+            catch (Exception ex) 
+            {
+                throw new Exception($"Error: {ex.Message}");
+            }
+        }
     }
 }
